@@ -1,0 +1,88 @@
+.header {
+  position: absolute;
+  padding-top: 1.5em;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  margin-left: 3.5em;
+  margin-top: 0.3em;
+}
+
+.menu {
+  margin-right: 3.5em;
+}
+
+.nav-link {
+  color: #cdcbd3;
+  transition: all 0.4s;
+}
+
+.nav-link:hover {
+  color: #eb2b63;
+}
+
+.user-panel {
+  background: #eb2b63;
+  color: #cdcbd3;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+.hero-section {
+  height: 45em;
+  overflow: hidden;
+  background: linear-gradient(#0b032a, #2c1472);
+}
+
+.hero-section h2 {
+  font-size: 5.5em;
+}
+
+.site-btn {
+  background-color: #eb2b63;
+  border-radius: 1em;
+}
+
+.hero-circle-container {
+  position: absolute;
+  bottom: 2em;
+  right: 10em;
+}
+
+.hero-circle {
+  background-color: #11cfca;
+  width: 5em;
+  height: 5em;
+  border-radius: 2.5em;
+  position: relative;
+  animation: circle 3s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    left: 10em;
+    bottom: 10em;
+  }
+
+  25% {
+    left: -10em;
+    bottom: 10em;
+  }
+
+  50% {
+    left: -10em;
+    bottom: 0;
+  }
+
+  75% {
+    left: 0;
+    bottom: 0;
+  }
+
+  100% {
+    left: 10em;
+    bottom: 10em;
+  }
+}

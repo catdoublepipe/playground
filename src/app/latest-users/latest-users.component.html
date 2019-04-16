@@ -1,0 +1,12 @@
+<h1>Super Cool App</h1>
+
+<h3>Users from random api</h3>
+
+<div>
+  <article *ngFor="let user of (users$ | async)">
+    <h4>{{ user.first }} {{ user.last }}</h4>
+    <p>Joined: {{ user.created }}</p>
+    <p>Balance: {{ user.balance }}</p>
+    <p>Contact: {{ user.address }}, {{ user.email }}</p>
+  </article>
+</div>
